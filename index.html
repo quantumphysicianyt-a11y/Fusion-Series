@@ -199,6 +199,22 @@
                 inset 0 0 30px rgba(255, 0, 110, 0.1);
             position: relative;
             overflow: hidden;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .bundle-image {
+            flex-shrink: 0;
+            width: 300px;
+        }
+
+        .bundle-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #00f5ff;
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
         }
 
         .bundle-feature::before {
@@ -635,6 +651,9 @@
         </section>
 
         <section class="bundle-feature">
+            <div class="bundle-image">
+                <img src="the-bundle.png" alt="The Bundle - All 12 Sessions">
+            </div>
             <div class="bundle-content">
                 <div class="bundle-badge">⚡ FEATURED OFFER ⚡</div>
                 <h2 class="bundle-title">THE BUNDLE</h2>
@@ -795,7 +814,7 @@
             </div>
 
             <div class="session-card">
-                <img src="https://static.wixstatic.com/media/06e12c8d86854b9985febcf2635ba0c4.jpg/v1/crop/x_16,y_0,w_3840,h_3840/fill/w_350,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Couple%20At%20Beach.jpg" alt="Fatigue & Vitality" class="session-image">
+                <img src="https://static.wixstatic.com/media/06e12c8d86854b9985febcf2635ba0c4.jpg/v1/fill/w_350,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Couple%20At%20Beach.jpg" alt="Fatigue & Vitality" class="session-image" style="object-position: center top;">
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 9</span>
