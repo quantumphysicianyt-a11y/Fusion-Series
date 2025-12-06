@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessions - SG BodyTalk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #c9b7a6 0%, #e8dfd5 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .sign-up-btn {
+            background: #1e3a5f;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .sign-up-btn:hover {
+            background: #2c5282;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 58, 95, 0.3);
+        }
+
+        .hero {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero-image-large {
+            width: 100%;
+            height: 600px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%231e3a5f" width="800" height="600"/><circle cx="400" cy="350" r="150" fill="%23ff6b6b" opacity="0.3"/></svg>');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 300;
+            color: #1e3a5f;
+            line-height: 1.2;
+        }
+
+        .hero-title strong {
+            display: block;
+            font-weight: 400;
+        }
+
+        .hero-images-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .hero-image-small {
+            width: 100%;
+            height: 280px;
+            background: #d4c4b7;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .hero-image-small:nth-child(1) {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280"><rect fill="%23f5f1ed" width="400" height="280"/></svg>');
+        }
+
+        .hero-image-small:nth-child(2) {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280"><rect fill="%23d4c4b7" width="400" height="280"/></svg>');
+        }
+
+        .hero-image-small:nth-child(3) {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280"><rect fill="%23e8dfd5" width="400" height="280"/></svg>');
+        }
+
+        .sessions-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .session-item {
+            background: rgba(30, 58, 95, 0.95);
+            color: white;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .session-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .session-title {
+            font-size: 20px;
+            font-weight: 300;
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .session-number {
+            font-weight: 400;
+            margin-right: 10px;
+        }
+
+        .session-btn {
+            background: white;
+            color: #1e3a5f;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .session-btn:hover {
+            background: transparent;
+            color: white;
+        }
+
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .hero-image-large {
+                height: 400px;
+            }
+
+            .hero-images-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .session-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .session-title {
+                font-size: 18px;
+            }
+
+            .session-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .sign-up-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-title {
+                font-size: 24px;
+            }
+
+            .hero-image-large {
+                height: 300px;
+            }
+
+            .hero-image-small {
+                height: 200px;
+            }
+
+            .session-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Built on WIX STUDIO</div>
+            <a href="#signup" class="sign-up-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+                Sign Up
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image-large"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="session-number">3</span>
+                <strong>Pain & Tension:</strong>
+                The Body's Call for Attention
+            </h1>
+            <div class="hero-images-grid">
+                <div class="hero-image-small"></div>
+                <div class="hero-image-small"></div>
+                <div class="hero-image-small"></div>
+            </div>
+        </div>
+    </section>
+
+    <main class="sessions-container">
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">6.</span>
+                Immune Balance: Reconnecting with the Body's Inner Defender
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">7.</span>
+                Hormonal Harmony: The Dance of Cycles and Change
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">8.</span>
+                Phobias & Fear Patterns: Dissolving Deep Conditioning
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">9.</span>
+                Fatigue & Vitality: Reclaiming the Spark of Life
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">10.</span>
+                Weight & Self-Perception: The Energy of Holding On
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">11.</span>
+                Relationships & Boundaries: Healing Through Connection
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+
+        <div class="session-item">
+            <div class="session-title">
+                <span class="session-number">12.</span>
+                Purpose & Alignment: The Quantum Blueprint of Health
+            </div>
+            <a href="#signup" class="session-btn">Sign Up</a>
+        </div>
+    </main>
+</body>
+</html>
