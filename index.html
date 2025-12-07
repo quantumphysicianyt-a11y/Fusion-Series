@@ -198,7 +198,7 @@
                 0 0 30px rgba(255, 0, 110, 0.4),
                 inset 0 0 30px rgba(255, 0, 110, 0.1);
             position: relative;
-            overflow: hidden;
+            overflow: visible;
             display: flex;
             gap: 30px;
             align-items: center;
@@ -215,6 +215,11 @@
             border-radius: 15px;
             border: 3px solid #00f5ff;
             box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+        }
+
+        .bundle-content {
+            flex: 1;
+            min-width: 0;
         }
 
         .bundle-feature::before {
