@@ -144,8 +144,20 @@
             font-size: clamp(18px, 5vw, 32px);
             color: #00f5ff;
             text-shadow: 0 0 10px #00f5ff;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             font-weight: 300;
+        }
+
+        .hero-info {
+            font-size: clamp(14px, 3vw, 20px);
+            color: #fff;
+            background: linear-gradient(45deg, rgba(255, 0, 110, 0.3), rgba(131, 56, 236, 0.3));
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            border: 2px solid #ff006e;
+            box-shadow: 0 0 20px rgba(255, 0, 110, 0.4);
+            letter-spacing: 1px;
         }
 
         /* FACILITATOR SECTION - FIXED FOR MOBILE */
@@ -488,6 +500,31 @@
             text-shadow: 0 0 5px #00f5ff;
         }
 
+        .session-time {
+            color: #ff006e;
+            font-size: 12px;
+            font-weight: 600;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .session-format {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .format-tag {
+            background: rgba(0, 245, 255, 0.2);
+            color: #00f5ff;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 600;
+            border: 1px solid rgba(0, 245, 255, 0.4);
+        }
+
         .session-title {
             font-size: 22px;
             font-weight: 700;
@@ -780,6 +817,7 @@
         <section class="hero">
             <h1 class="hero-title">FUSION SESSIONS</h1>
             <h2 class="hero-subtitle">A Year of Healing from the Inside Out</h2>
+            <p class="hero-info">Live Online Sessions • 10am EST • Recordings Available</p>
         </section>
 
         <section class="facilitator-section">
@@ -788,8 +826,8 @@
             </div>
             <div class="facilitator-content">
                 <h3>Dr. Tracey Clark</h3>
-                <h4>Your Quantum Physician Optimist</h4>
-                <p>Join Dr. Tracey Clark for a transformative year-long journey through consciousness and healing. With expertise in BodyTalk, quantum healing, and integrative wellness, Dr. Clark guides you through monthly deep-dive sessions that address the root causes of physical and emotional imbalances. Experience personalized energetic integration, real-time healing demonstrations, and practical tools you can use long after each session ends.</p>
+                <h4>Your Quantum Potentialist Guide</h4>
+                <p>Join Dr. Tracey Clark for a transformative year-long journey through consciousness and healing. With expertise in BodyTalk, quantum healing, and integrative wellness, Dr. Clark guides you through monthly deep-dive sessions that address the root causes of physical, mental, and emotional imbalances. Experience personalized energetic integration, real-time healing demonstrations, and practical tools you can use long after each session ends.</p>
             </div>
         </section>
 
@@ -801,7 +839,7 @@
                 <div class="bundle-badge">⚡ FEATURED OFFER ⚡</div>
                 <h2 class="bundle-title">THE BUNDLE</h2>
                 <p class="bundle-description">
-                    Transform your entire year with complete access to all 12 Quantum Physician Fusion Sessions. Each month, dive deep into a different aspect of healing—from allergies and anxiety to sleep, pain, hormones, and purpose. This comprehensive journey addresses the physical, emotional, and energetic roots of your health challenges, helping you reclaim vitality, clarity, and alignment. Experience the power of quantum consciousness applied to real-world wellness. Join us for the complete transformation.
+                    Transform your entire year with complete access to all 12 Quantum Physician Fusion Sessions. Each month, dive deep into a different aspect of healing—from allergies and anxiety to sleep, pain, hormones, and purpose. This comprehensive journey addresses the physical, mental, emotional, and energetic roots of your health challenges, helping you reclaim vitality, clarity, and alignment. Experience the power of quantum consciousness applied to real-world wellness. Join us for the complete transformation.
                 </p>
                 <div class="bundle-pricing">
                     <span class="price-original">$600</span>
@@ -809,7 +847,7 @@
                     <span class="price-savings">SAVE $100!</span>
                 </div>
                 <p class="bundle-info">
-                    12 Sessions for the Price of 10 • Monthly Live Sessions • January - December 2026
+                    12 Sessions for the Price of 10 • Live Online at 10am EST • Recordings Available After Each Session
                 </p>
                 <a href="https://buy.stripe.com/8x27sL2GS8sX3eJ1OI0x20e" class="bundle-btn">GET THE BUNDLE</a>
             </div>
@@ -825,11 +863,15 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 1</span>
-                        <span class="session-date">JAN 30</span>
+                        <span class="session-date">JAN 30<span class="session-time">10am EST</span></span>
                     </div>
-                    <h3 class="session-title">Allergies & Sensitivities: Rewriting the Body's Response</h3>
+                    <h3 class="session-title">Intolerance & Sensitivity: Rewriting the Body's Response</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">The Intelligence behind overreaction.</p>
-                    <p class="session-description">Allergies aren't just physical—they reflect how the body learns to defend against what it misperceives as harmful. In this session, we explore the energetic and emotional roots of hypersensitivity, helping the body recognize safety and restore ease in its internal communication.</p>
+                    <p class="session-description">Allergies and intolerances aren't just physical—they reflect how the body learns to defend against what it misperceives as harmful. In this session, we explore the mental and emotional roots of hypersensitivity, helping the body recognize safety and restore ease in its internal communication.</p>
                     <div class="session-footer">
                         <span class="session-price">$50</span>
                         <a href="https://buy.stripe.com/4gM8wPdlw24zbLfdxq0x200" class="session-btn">Sign Up</a>
@@ -842,11 +884,15 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 2</span>
-                        <span class="session-date">FEB 27</span>
+                        <span class="session-date">FEB 27<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Anxiety & Overwhelm: Restoring the Nervous System's Rhythm</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Balancing the body's response to stress.</p>
-                    <p class="session-description">Anxiety often arises when the mind and body lose coherence. This session helps regulate the nervous system and reconnect you to the present moment through guided awareness, energetic integration, and techniques that teach the body to trust stillness again.</p>
+                    <p class="session-description">Anxiety often arises when the mind and body lose coherence. This session helps regulate the nervous system and reconnect you to the present moment through guided awareness, self-regulation, and techniques that teach the body to trust stillness again.</p>
                     <div class="session-footer">
                         <span class="session-price">$50</span>
                         <a href="https://buy.stripe.com/cNi5kDftE8sXaHbgJC0x201" class="session-btn">Sign Up</a>
@@ -859,9 +905,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 3</span>
-                        <span class="session-date">MAR 27</span>
+                        <span class="session-date">MAR 27<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Pain & Tension: The Body's Call for Attention</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Understanding discomfort as communication.</p>
                     <p class="session-description">Pain isn't the enemy—it's the messenger. Learn to interpret what your body is truly trying to say through its aches, stiffness, and recurring tension. This experience helps you transmute discomfort into clarity, releasing stored emotional charge and inviting physical freedom.</p>
                     <div class="session-footer">
@@ -876,9 +926,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 4</span>
-                        <span class="session-date">APR 24</span>
+                        <span class="session-date">APR 24<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Sleep & Reset: Reclaiming Rest in a Restless World</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Synchronizing circadian and energetic rhythms.</p>
                     <p class="session-description">Sleep is how the body repairs and the mind integrates. In this session, you'll work with the deeper layers of consciousness that govern rest, helping to calm inner noise, reset biological clocks, and restore the body's natural cycles of renewal.</p>
                     <div class="session-footer">
@@ -893,9 +947,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 5</span>
-                        <span class="session-date">MAY 29</span>
+                        <span class="session-date">MAY 29<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Digestion & Integration: Nourishing the Gut-Mind Connection</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">The flow of assimilation—physical and emotional.</p>
                     <p class="session-description">Digestion reflects how well we process life itself. This session explores the energetic connection between gut health, emotional absorption, and boundary clarity. You'll realign your internal ecosystem for smoother flow, better resilience, and genuine nourishment.</p>
                     <div class="session-footer">
@@ -910,9 +968,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 6</span>
-                        <span class="session-date">JUN 19</span>
+                        <span class="session-date">JUN 19<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Immune Balance: Reconnecting with the Body's Inner Defender</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">The intelligence of protection and adaptation.</p>
                     <p class="session-description">The immune system mirrors how we meet the world—either with defense or with discernment. This session supports recalibration of your internal defense network, shifting from chronic vigilance to balanced awareness, empowering the body to heal through trust.</p>
                     <div class="session-footer">
@@ -927,9 +989,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 7</span>
-                        <span class="session-date">JUL 3</span>
+                        <span class="session-date">JUL 3<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Hormonal Harmony: The Dance of Cycles and Change</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Reestablishing communication between glands, mood, and mind.</p>
                     <p class="session-description">Hormones govern far more than physical cycles—they influence mood, clarity, and creative flow. This session brings awareness to the patterns that disrupt endocrine balance and teaches your system to re-tune itself to inner rhythm, stability, and vitality.</p>
                     <div class="session-footer">
@@ -944,11 +1010,15 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 8</span>
-                        <span class="session-date">AUG 7</span>
+                        <span class="session-date">AUG 7<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Phobias & Fear Patterns: Dissolving Deep Conditioning</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Transforming fear into freedom.</p>
-                    <p class="session-description">Fear is often stored energy seeking resolution. Through guided inner work and energetic integration, this session helps you trace old fears to their roots—unraveling the body's habitual reactions and restoring a grounded sense of safety and courage.</p>
+                    <p class="session-description">Fear is often stored energy seeking resolution. This session helps you gently access the deeper layers where fear patterns originate—unraveling the body's habitual reactions and restoring a grounded sense of safety and courage.</p>
                     <div class="session-footer">
                         <span class="session-price">$50</span>
                         <a href="https://buy.stripe.com/5kQ8wP4P06kPcPj50U0x207" class="session-btn">Sign Up</a>
@@ -961,11 +1031,15 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 9</span>
-                        <span class="session-date">SEP 4</span>
+                        <span class="session-date">SEP 4<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Fatigue & Vitality: Reclaiming the Spark of Life</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Energizing from within.</p>
-                    <p class="session-description">Chronic fatigue often signals a system running on outdated programming. This session helps reignite your internal energy source by releasing emotional drain, restoring cellular vitality, and reconnecting you with the natural flow of life force.</p>
+                    <p class="session-description">Chronic fatigue often reflects a system operating out of coherence. This session supports the body in reorganizing its internal communication, allowing energy to circulate more efficiently and restoring a natural sense of vitality and momentum.</p>
                     <div class="session-footer">
                         <span class="session-price">$50</span>
                         <a href="https://buy.stripe.com/cNidR981c7oTdTn0KE0x208" class="session-btn">Sign Up</a>
@@ -978,9 +1052,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 10</span>
-                        <span class="session-date">OCT 2</span>
+                        <span class="session-date">OCT 2<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Weight & Self-Perception: The Energy of Holding On</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">The emotional intelligence of the body's shape.</p>
                     <p class="session-description">The body holds what the heart cannot yet release. This session explores weight, image, and self-protection through a consciousness lens—helping you understand what your body is expressing and creating space for gentle, sustainable transformation.</p>
                     <div class="session-footer">
@@ -995,9 +1073,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 11</span>
-                        <span class="session-date">NOV 6</span>
+                        <span class="session-date">NOV 6<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Relationships & Boundaries: Healing Through Connection</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">The body's response to relational energy.</p>
                     <p class="session-description">Every relationship affects the body's chemistry and coherence. This session focuses on restoring energetic boundaries and heart resonance, so you can connect deeply without depletion—transforming relational stress into authentic connection and peace.</p>
                     <div class="session-footer">
@@ -1012,9 +1094,13 @@
                 <div class="session-content">
                     <div class="session-header">
                         <span class="session-number">SESSION 12</span>
-                        <span class="session-date">DEC 4</span>
+                        <span class="session-date">DEC 4<span class="session-time">10am EST</span></span>
                     </div>
                     <h3 class="session-title">Purpose & Alignment: The Quantum Blueprint of Health</h3>
+                    <div class="session-format">
+                        <span class="format-tag">Live Online</span>
+                        <span class="format-tag">Recording Available</span>
+                    </div>
                     <p class="session-subtitle">Integrating your body's wisdom into life direction.</p>
                     <p class="session-description">Illness, fatigue, or stagnation often arise when we drift from purpose. This final session aligns you with your higher blueprint—bridging physical vitality, emotional balance, and inspired action. Leave the year with clarity, alignment, and embodied expansion.</p>
                     <div class="session-footer">
