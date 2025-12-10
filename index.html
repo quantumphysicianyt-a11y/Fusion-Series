@@ -441,6 +441,8 @@
             box-shadow: 0 5px 20px rgba(131, 56, 236, 0.3);
             transition: all 0.3s ease;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .session-card::before {
@@ -472,6 +474,26 @@
 
         .session-content {
             padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .session-description {
+            font-size: 15px;
+            color: #ddd;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .session-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: auto;
         }
 
         .session-header {
@@ -501,11 +523,16 @@
         }
 
         .session-time {
-            color: #ff006e;
-            font-size: 12px;
-            font-weight: 600;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
             display: block;
-            margin-top: 3px;
+            margin-top: 5px;
+            text-shadow: none;
+            background: rgba(255, 0, 110, 0.4);
+            padding: 3px 8px;
+            border-radius: 10px;
+            letter-spacing: 0.5px;
         }
 
         .session-format {
@@ -538,21 +565,6 @@
             font-style: italic;
             color: #00f5ff;
             margin-bottom: 15px;
-        }
-
-        .session-description {
-            font-size: 15px;
-            color: #ddd;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .session-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
         }
 
         .session-price {
@@ -854,7 +866,7 @@
         </section>
 
         <div class="section-divider">
-            <h2 class="section-title">INDIVIDUAL FUSION SESSIONS</h2>
+            <h2 class="section-title">MONTHLY FUSION SESSIONS</h2>
         </div>
 
         <div class="sessions-grid">
