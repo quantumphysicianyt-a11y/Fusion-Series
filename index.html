@@ -343,19 +343,33 @@
         }
 
         .bundle-individual-note {
-            font-size: 18px;
+            font-size: 16px;
             color: #fff;
-            background: rgba(0, 245, 255, 0.15);
-            padding: 12px 20px;
-            border-radius: 10px;
-            border: 1px solid #00f5ff;
-            margin-bottom: 20px;
+            background: rgba(255, 0, 110, 0.2);
+            padding: 20px 25px;
+            border-radius: 15px;
+            border: 2px solid #ff006e;
+            margin-bottom: 25px;
             text-align: center;
+            box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
         }
 
-        .bundle-individual-note strong {
-            color: #00f5ff;
-            font-size: 20px;
+        .bundle-individual-note .price-highlight {
+            display: block;
+            font-size: 48px;
+            font-family: 'Righteous', cursive;
+            color: #ff006e;
+            text-shadow: 0 0 20px rgba(255, 0, 110, 0.8);
+            margin: 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .bundle-individual-note .per-session {
+            font-size: 22px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
         }
 
         .bundle-btn {
@@ -864,7 +878,11 @@
                 <p class="bundle-description">
                     Transform your entire year with complete access to all 12 Quantum Physician Fusion Sessions. Each month, dive deep into a different aspect of healing—from allergies and anxiety to sleep, pain, hormones, and purpose. This comprehensive journey addresses the physical, mental, emotional, and energetic roots of your health challenges, helping you reclaim vitality, clarity, and alignment. Experience the power of quantum consciousness applied to real-world wellness. Join us for the complete transformation.
                 </p>
-                <p class="bundle-individual-note">Individual sessions are <strong>$50 each</strong> — get all 12 for the price of 10!</p>
+                <div class="bundle-individual-note">
+                    <span>Individual sessions</span>
+                    <span class="price-highlight">$50 EACH</span>
+                    <span class="per-session">Get all 12 for the price of 10!</span>
+                </div>
                 <div class="bundle-pricing">
                     <span class="price-original">$600</span>
                     <span class="price-bundle">$500</span>
