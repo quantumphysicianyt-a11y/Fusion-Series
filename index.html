@@ -372,6 +372,206 @@
             font-weight: 700;
         }
 
+        /* YOUR OPTIONS SECTION */
+        .options-section {
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .options-title {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(28px, 6vw, 42px);
+            color: #00f5ff;
+            text-shadow: 0 0 20px #00f5ff;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #ff006e;
+        }
+
+        /* Single Session Box */
+        .single-session-box {
+            background: linear-gradient(135deg, rgba(0, 245, 255, 0.1), rgba(131, 56, 236, 0.1));
+            border: 2px solid #00f5ff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .single-session-label {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .single-session-price {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(42px, 10vw, 56px);
+            color: #00f5ff;
+            text-shadow: 0 0 20px #00f5ff;
+            margin-bottom: 20px;
+        }
+
+        .single-session-price span {
+            font-size: clamp(24px, 5vw, 32px);
+            color: #ff006e;
+        }
+
+        .single-session-btn {
+            display: inline-block;
+            background: transparent;
+            color: #00f5ff;
+            padding: 12px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid #00f5ff;
+            transition: all 0.3s ease;
+        }
+
+        .single-session-btn:hover {
+            background: #00f5ff;
+            color: #1a1a2e;
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.6);
+        }
+
+        /* OR Divider */
+        .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00f5ff, transparent);
+        }
+
+        .or-divider span {
+            padding: 0 20px;
+            color: #00f5ff;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Bundle Box */
+        .bundle-box {
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.15), rgba(131, 56, 236, 0.15));
+            border: 3px solid #ff006e;
+            border-radius: 20px;
+            padding: 40px 30px;
+            position: relative;
+            box-shadow: 
+                0 0 30px rgba(255, 0, 110, 0.4),
+                inset 0 0 30px rgba(255, 0, 110, 0.1);
+        }
+
+        .bundle-box .bundle-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff006e;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 20px rgba(255, 0, 110, 0.6);
+            white-space: nowrap;
+        }
+
+        .bundle-image-container {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        .bundle-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #00f5ff;
+            box-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
+        }
+
+        .bundle-box-title {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(24px, 5vw, 32px);
+            color: #00f5ff;
+            text-shadow: 0 0 15px #00f5ff;
+            margin-bottom: 10px;
+        }
+
+        .bundle-box-original {
+            font-size: 24px;
+            color: #ff006e;
+            text-decoration: line-through;
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+
+        .bundle-box-price {
+            font-family: 'Righteous', cursive;
+            font-size: clamp(48px, 12vw, 72px);
+            color: #00f5ff;
+            text-shadow: 0 0 30px #00f5ff;
+            margin-bottom: 15px;
+        }
+
+        .bundle-savings-tag {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff006e, #8338ec);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .bundle-box-info {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .bundle-box-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff006e, #8338ec);
+            color: white;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border: 3px solid #00f5ff;
+            box-shadow: 
+                0 0 30px rgba(255, 0, 110, 0.6),
+                0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .bundle-box-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 0 40px rgba(255, 0, 110, 0.8),
+                0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
         .bundle-btn {
             display: inline-block;
             background: linear-gradient(45deg, #ff006e, #8338ec);
@@ -725,6 +925,21 @@
                 padding: 0 15px;
             }
 
+            .options-section {
+                margin: 40px auto;
+                padding: 0 15px;
+            }
+
+            .single-session-box,
+            .bundle-box {
+                padding: 25px 20px;
+            }
+
+            .bundle-box-btn {
+                padding: 15px 35px;
+                font-size: 16px;
+            }
+
             .facilitator-section,
             .bundle-feature {
                 margin: 60px 15px;
@@ -857,6 +1072,37 @@
             <p class="hero-info">Live Online Sessions • 10am EST • Recordings Available</p>
         </section>
 
+        <!-- YOUR OPTIONS SECTION -->
+        <div class="options-section">
+            <h2 class="options-title">Your Options</h2>
+            
+            <!-- Single Session Option -->
+            <div class="single-session-box">
+                <p class="single-session-label">Join any single session:</p>
+                <p class="single-session-price">$50 <span>each</span></p>
+                <a href="#sessions" class="single-session-btn">VIEW ALL SESSIONS</a>
+            </div>
+            
+            <!-- OR Divider -->
+            <div class="or-divider">
+                <span>OR</span>
+            </div>
+            
+            <!-- Bundle Option -->
+            <div class="bundle-box">
+                <div class="bundle-badge">⚡ BEST VALUE ⚡</div>
+                <div class="bundle-image-container">
+                    <img src="13.png" alt="The Bundle - All 12 Sessions">
+                </div>
+                <h3 class="bundle-box-title">THE COMPLETE BUNDLE</h3>
+                <p class="bundle-box-original">$600</p>
+                <p class="bundle-box-price">$500</p>
+                <div class="bundle-savings-tag">SAVE $100 — 2 Sessions FREE!</div>
+                <p class="bundle-box-info">All 12 sessions • Live Online at 10am EST • Recordings included</p>
+                <a href="https://buy.stripe.com/8x27sL2GS8sX3eJ1OI0x20e" class="bundle-box-btn">GET THE BUNDLE NOW</a>
+            </div>
+        </div>
+
         <section class="facilitator-section">
             <div class="facilitator-image">
                 <img src="dr-tracey-clark.jpg" alt="Dr. Tracey Clark">
@@ -868,34 +1114,7 @@
             </div>
         </section>
 
-        <section class="bundle-feature">
-            <div class="bundle-image">
-                <img src="13.png" alt="The Bundle - All 12 Sessions">
-            </div>
-            <div class="bundle-content">
-                <div class="bundle-badge">⚡ FEATURED OFFER ⚡</div>
-                <h2 class="bundle-title">THE BUNDLE</h2>
-                <p class="bundle-description">
-                    Transform your entire year with complete access to all 12 Quantum Physician Fusion Sessions. Each month, dive deep into a different aspect of healing—from allergies and anxiety to sleep, pain, hormones, and purpose. This comprehensive journey addresses the physical, mental, emotional, and energetic roots of your health challenges, helping you reclaim vitality, clarity, and alignment. Experience the power of quantum consciousness applied to real-world wellness. Join us for the complete transformation.
-                </p>
-                <div class="bundle-individual-note">
-                    <span>Individual sessions</span>
-                    <span class="price-highlight">$50 EACH</span>
-                    <span class="per-session">Get all 12 for the price of 10!</span>
-                </div>
-                <div class="bundle-pricing">
-                    <span class="price-original">$600</span>
-                    <span class="price-bundle">$500</span>
-                    <span class="price-savings">SAVE $100!</span>
-                </div>
-                <p class="bundle-info">
-                    12 Sessions for the Price of 10 • Live Online at 10am EST • Recordings Available After Each Session
-                </p>
-                <a href="https://buy.stripe.com/8x27sL2GS8sX3eJ1OI0x20e" class="bundle-btn">GET THE BUNDLE</a>
-            </div>
-        </section>
-
-        <div class="section-divider">
+        <div class="section-divider" id="sessions">
             <h2 class="section-title">MONTHLY FUSION SESSIONS</h2>
         </div>
 
